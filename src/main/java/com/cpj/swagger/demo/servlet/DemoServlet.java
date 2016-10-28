@@ -27,7 +27,7 @@ public class DemoServlet extends HttpServlet {
 	@API(value="", summary="示例1", parameters={
 			@Param(name="username", description="用户名", type="string"),
 			@Param(name="password", description="密码", type="string", format="password"),
-			@Param(name="image" , description="图片", type="file", format="binary")
+			@Param(name="image" , description="图片", type="file")
 	})
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("application/json;charset=utf-8");
